@@ -1,0 +1,7 @@
+﻿Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.class
+$RECYCLE.BIN/
+.DS_Store
+target/
