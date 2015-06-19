@@ -32,6 +32,5 @@ public class Demo {
 			System.out.println(u.getName());
 		}
 	}
-
 }
 
