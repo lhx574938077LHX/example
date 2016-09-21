@@ -6,12 +6,16 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 @XmlRootElement(name="Student")  
 public class Student implements Serializable {
 	
 	private static final long serialVersionUID = 5831056732087399074L;
-	
+	@JsonIgnore
 	private String name;
+	@JsonProperty("ages")
 	private Short age;
 	private Short sex;
 

@@ -3,6 +3,7 @@ package com.icefox.json;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.alibaba.fastjson.JSONArray;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.icefox.bean.Student;
 
@@ -26,11 +27,11 @@ public class Demo {
 		String jsonStr = JsonSerializer.serializer(stus);
 		System.out.println(jsonStr);
 		
-		@SuppressWarnings("unchecked")
-		List<Student> stuList =(List<Student>)JsonSerializer.deserializer(jsonStr,new TypeReference<List<Student>>(){});
-		for(Student u : stuList){
-			System.out.println(u.getName());
-		}
+//		@SuppressWarnings("unchecked")
+//		List<Student> stuList =(List<Student>)JsonSerializer.deserializer(jsonStr,new TypeReference<List<Student>>(){});
+//		for(Student u : stuList){
+//			System.out.println(u.getName());
+//		}
 	}
 }
 
