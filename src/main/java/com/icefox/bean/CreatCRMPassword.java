@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import org.apache.commons.lang3.StringEscapeUtils;
+
 public class CreatCRMPassword {
 	public static void main(String[] args) throws IOException {
 		Date date=new Date();

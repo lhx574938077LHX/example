@@ -15,7 +15,10 @@ public class test201511241100 {
 		 Hashtable<String, Integer> numbers = new Hashtable<String, Integer>();
 		 System.out.println(new Random().nextInt());
 		 System.out.println(Integer.toHexString(new Random().nextInt()));
-//		 synchronized
+
+		 
 	}
+
+		
 	
 }
