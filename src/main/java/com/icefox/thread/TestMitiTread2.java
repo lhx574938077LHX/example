@@ -9,7 +9,6 @@ public class TestMitiTread2 implements Runnable {
 	
 	private Lock lock = new ReentrantLock();
 	
-	@Override
 	public void run(){
 		 if(lock.tryLock()){
 			 try {

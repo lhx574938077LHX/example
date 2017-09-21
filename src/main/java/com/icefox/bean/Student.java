@@ -9,46 +9,54 @@ import javax.xml.bind.annotation.XmlRootElement;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@XmlRootElement(name="Student")  
+@XmlRootElement(name = "Student")
 public class Student implements Serializable {
-	
-	private static final long serialVersionUID = 5831056732087399074L;
-	@JsonIgnore
-	private String name;
-	@JsonProperty("ages")
-	private Short age;
-	private Short sex;
 
-	@XmlElement(name="Name")  
-	public String getName() {
-		return name;
-	}
+    private static final long serialVersionUID = 5831056732087399074L;
+    private Integer userId = 0;
+    @JsonIgnore
+    private String name;
+    @JsonProperty("ages")
+    private Short age;
+    private Short sex;
+    
+    @XmlElement(name = "UserId")
+    public Integer getUserId() {
+        return userId;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
 
-	@XmlAttribute(name="Age")  
-	public Short getAge() {
-		return age;
-	}
+    @XmlElement(name = "Name")
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(Short age) {
-		this.age = age;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	@XmlAttribute(name="Sex")  
-	public Short getSex() {
-		return sex;
-	}
+    @XmlAttribute(name = "Age")
+    public Short getAge() {
+        return age;
+    }
 
-	public void setSex(Short sex) {
-		this.sex = sex;
-	}
-	
-	public Student()
-	{
-		
-	}
+    public void setAge(Short age) {
+        this.age = age;
+    }
+
+    @XmlAttribute(name = "Sex")
+    public Short getSex() {
+        return sex;
+    }
+
+    public void setSex(Short sex) {
+        this.sex = sex;
+    }
+
+    public Student() {
+
+    }
 }
-

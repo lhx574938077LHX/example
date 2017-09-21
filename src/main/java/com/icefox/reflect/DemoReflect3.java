@@ -12,7 +12,6 @@ public class DemoReflect3 {
 		Person per=null;
 		try {
 		    per=(Person)demo.newInstance();
-		    
 		} catch (InstantiationException e) {
 		    e.printStackTrace();
 		} catch (IllegalAccessException e) {

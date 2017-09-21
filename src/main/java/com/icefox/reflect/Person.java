@@ -1,6 +1,10 @@
 package com.icefox.reflect;
 
 public class Person extends Father{
+	public void pt(){
+		System.out.println("abcd");
+	}
+	
     public String getName() {
         return name;
     }

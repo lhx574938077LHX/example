@@ -27,7 +27,6 @@ public class TestService {
 			CloseableHttpClient httpclient =  HttpClients.createDefault();
 			String url = "http://localhost:9080/jyzxclient_web/search/sendTestSecurity.do";
 			HttpPost post = new HttpPost(url);
-			
 			publicKey = readFile("D:\\workspace\\workspace2\\example\\src\\main\\java\\cer\\filePulbicKey.cer");
 			privateKey = readFile("D:\\workspace\\workspace2\\example\\src\\main\\java\\cer\\filePrivateKey.jks");
 			
@@ -69,9 +68,9 @@ public class TestService {
 				System.out.println("客户端："+companyCodeResult);
 				
 				JSONObject resultJson = new JSONObject(dataResultFinal);	
-				boolean isBlack = (boolean) resultJson.get("isBlack");
+//				boolean isBlack = (boolean) resultJson.get("isBlack");
 				String repayDate = (String) resultJson.get("repayDate");
-				System.out.println("是否逾期："+isBlack+"---逾期天数："+repayDate);
+//				System.out.println("是否逾期："+isBlack+"---逾期天数："+repayDate);
 			}else{
 				System.out.println("签名不对！");
 			}

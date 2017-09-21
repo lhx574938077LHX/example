@@ -18,6 +18,16 @@ public class Person implements Serializable {
 	
 	private Date birthday;
 	
+	public Person() {
+	}
+	
+	public Person(int age,String name,String sex,Date birthday) {
+		this.age=age;
+		this.name=name;
+		this.sex=sex;
+		this.birthday=birthday;
+	}
+	
 	public int getAge() {
 		return age;
 	}

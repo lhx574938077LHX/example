@@ -4,9 +4,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.*;
+import java.nio.channels.FileChannel;
+
+import com.aspose.email.internal.ah.in;
 
 public class readFile {
 	
@@ -75,4 +80,18 @@ public class readFile {
         reader.close();
 	}
 	
+	private static final int BSIZE=1024;
+	public void readFile5() throws Exception{
+		FileChannel in = new FileInputStream(new File("D:\\notepad1.txt")).getChannel();
+		FileChannel out = new FileOutputStream(new File("D:\\notepad2.txt")).getChannel();
+		ByteBuffer reader = null;
+		reader=ByteBuffer.allocate(BSIZE);
+		while(in.read(reader)!=-1){
+			reader.flip();
+			out.write(reader);
+			reader.clear();
+		}
+		in.close();
+		out.close();
+	}
 }

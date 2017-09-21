@@ -14,7 +14,6 @@ public class MyInvocationHandler implements InvocationHandler {
                 .getClass().getInterfaces(), this);
     }
 	
-	@Override
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
 		
