@@ -75,7 +75,7 @@ public class XmlAnalyzeUtil {
 		}
 		return analyzeMap;
 	}
-//解析field
+	//解析field
 	public static Field inputXmlAnalyze(Element element,String fileName) {
 
 		Iterator<Element> it = element.elementIterator();

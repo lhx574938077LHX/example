@@ -20,7 +20,11 @@ public class changeUnio {
 	        String s2 = StringEscapeUtils.unescapeJava(s);
 	        System.out.println(s);
 	        System.out.println(s2);
-			
+	        String str1 = "{\"index\":\"1\"}";
+			//url 编码解码
+	        String result = java.net.URLEncoder.encode(str1, "UTF-8");
+	        System.out.println(result);
+	        
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

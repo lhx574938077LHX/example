@@ -17,10 +17,38 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/test/lib/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/poi-examples-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/poi-excelant-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/poi-ooxml-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/poi-ooxml-schemas-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/poi-scratchpad-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/jsoup-1.10.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/jsoup-1.10.1-sources.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/jsoup-1.10.1.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/fastjson-1.2.2.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/httpclient-4.2.5.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/httpclient-cache-4.2.5.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/httpcore-4.2.4.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/httpmime-4.1.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/json-lib-ext-spring-1.0.2.jar"/>
+	<classpathentry kind="lib" path="src/test/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

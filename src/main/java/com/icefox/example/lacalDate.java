@@ -27,7 +27,6 @@ public class lacalDate {
 //        }
 //        
 //        System.out.println("==="+LocalDate.now().minusDays(1).toString());
-        
 //	        LocalDate localDate = LocalDate.of(2016, 10, 30);
 //	        LocalDate endOfMonth = LocalDate.now();
 //	        while (!localDate.isAfter(endOfMonth)){
