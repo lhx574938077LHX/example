@@ -11,7 +11,11 @@ import com.alibaba.fastjson.JSONObject;
  * 
  */
 public class AjaxJson {
-
+    
+    public static void main(String[] args) {
+        System.out.println(5&4);
+    }
+    
 	private boolean success = true;// 是否成功
 	private String msg = "操作成功";// 提示信息
 	private Object obj = null;// 其他信息

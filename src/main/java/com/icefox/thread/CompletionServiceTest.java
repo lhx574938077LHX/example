@@ -14,9 +14,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class CompletionServiceTest {
 
     public static void main(String[] args) throws Exception {
-        CompletionServiceTest csTest = new CompletionServiceTest();
-        csTest.count1();
-        csTest.count2();
+        String a = "a";
+        System.out.println(a.hashCode());
     }
 
     /*

@@ -10,6 +10,8 @@ public class DemoReflect2 {
 		try{
 		    //一般尽量采用这种形式
 		    demo1=Class.forName("com.icefox.reflect.DemoReflect");
+		    Object object = demo1.newInstance();
+		    
 		}
 		catch(Exception e){
 		    e.printStackTrace();

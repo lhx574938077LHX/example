@@ -1,11 +1,15 @@
 package com.icefox.example;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
 public class test20170330 {
-//	public static void main(String[] args) {
+	public static void main(String[] args) {
+	    int[] a = {1,2,3};
+	    System.out.println(a.length);
+	    Arrays.sort(a);
 //		TreeMap<Integer,Integer> map1 = new TreeMap<Integer,Integer>();  //默认的TreeMap升序排列  
 //        TreeMap<Integer,Integer> map2= new TreeMap<Integer,Integer>(new Comparator<Integer>() {
 //			@Override
@@ -24,5 +28,5 @@ public class test20170330 {
 //        map1.put(7,1);  
 //        map1.put(5,2);  
 //        System.out.println("map1="+map1);  
-//	}  
+	}  
 }

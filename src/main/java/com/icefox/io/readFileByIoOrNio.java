@@ -1,19 +1,18 @@
 package com.icefox.io;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.*;
+import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-import com.aspose.email.internal.ah.in;
-
-public class readFile {
+public class readFileByIoOrNio {
 	
 	public void readFile1() throws Exception{
 		FileInputStream in = new FileInputStream(new File("D:\\workspace\\workspace2\\example\\src\\test\\java\\com\\icefox\\example\\notepad.txt"));
@@ -80,6 +79,7 @@ public class readFile {
         reader.close();
 	}
 	
+	// nio
 	private static final int BSIZE=1024;
 	public void readFile5() throws Exception{
 		FileChannel in = new FileInputStream(new File("D:\\notepad1.txt")).getChannel();
@@ -87,7 +87,7 @@ public class readFile {
 		ByteBuffer reader = null;
 		reader=ByteBuffer.allocate(BSIZE);
 		while(in.read(reader)!=-1){
-			reader.flip();
+			reader.flip();//对该buffer进行遍历（读取）了
 			out.write(reader);
 			reader.clear();
 		}

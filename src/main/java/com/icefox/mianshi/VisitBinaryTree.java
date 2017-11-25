@@ -1,5 +1,6 @@
 package com.icefox.mianshi;
 
+import java.io.RandomAccessFile;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -14,7 +15,7 @@ public class VisitBinaryTree {
         BinaryTree nodeR;  
         node.setLeftChild(new BinaryTree('B'));    
         node.setRightChild(new BinaryTree('C'));    
-            
+//        RandomAccessFile    
         nodeL1 = node.getLeftChild();    
         nodeL1.setLeftChild(new BinaryTree('D'));    
         nodeL1.setRightChild(new BinaryTree('E'));   

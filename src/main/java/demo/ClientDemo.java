@@ -21,12 +21,30 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ClientDemo {
 	
 	public static void main(String[] args) {
 //		sfAuth3JO(); //三要素
-		idCardPhotoJO();//身份证照片接口
+//		idCardPhotoJO();//身份证照片接口
+	    String str = new String("***");
+	    String str1 = new String("***");
+	    System.out.println(str.equalsIgnoreCase(str1));
+	    System.out.println(str == str1);
+	    System.out.println(str.hashCode());
+	    
+	    Map<String, String> hashMap = new HashMap<String, String>();  
+	    hashMap.put("70317", "曲阳");  
+	    hashMap.put("71121", "在东");  
+	    hashMap.put("70333", "商音");  
+	    hashMap.put("80000", "有恒");  
+	    for(Map.Entry<String, String> entry: hashMap.entrySet()) {  
+	        String key = entry.getKey();  
+	        String value = entry.getValue();  
+	        System.out.println("key:" + key + ";value:" + value);  
+	    }  
 	}
 
 	/**

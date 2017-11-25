@@ -1,12 +1,12 @@
 package com.icefox.mianshi;
 
-public class BinaryTree {
+public class BinaryTree extends BinaryTreeSon {
 		char data;                  //根节点  
 	    BinaryTree leftChild;       //左孩子  
 	    BinaryTree rightChild;      //右孩子  
-	      
+	    
 	    public BinaryTree() {  
-	          
+	         System.out.println(j); 
 	    }  
 	      
 	    public void visit() {  
